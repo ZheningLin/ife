@@ -14,4 +14,4 @@
   - 代码中含有必要的注释
   - 不允许借助任何第三方组件库实现
 # 实现
- [预览](https://zheninglin.github.io/ife/Task29-单表单校验/index.html)
+ [预览](https://zheninglin.github.io/ife/Task29-单表单校验/task-29.html)

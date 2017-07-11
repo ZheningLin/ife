@@ -1,0 +1,64 @@
+/*#data_create fieldset:nth-of-type(n+3){
+	display: none;
+}
+#data_create .select~#box_item,
+#data_create .checkbox~#box_item,*/
+
+/*设置的样式*/
+#form_data_set{
+	width: 300px;
+	float: left;
+}
+#form_data_set fieldset{
+	margin-top: 20px;
+}
+#form_data_set label {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    margin-right: 8px;
+}
+#form_data_set #lable_box {
+    width: 200px;
+}
+#length_control input {
+    width: 20%;
+}
+#btn_add {
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(59,153,252);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+}
+/*展示区样式*/
+#form_box{
+	margin: 0 40px 0 340px;
+	min-width: 600px;
+	padding: 0 0 20px 0;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+#title{
+	text-align: center;
+	color: rgb(59,153,252);
+}
+#result{
+	width: 400px;
+	margin: 20px auto;
+	position: relative;
+}
+#submit_form {
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(59,153,252);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+}

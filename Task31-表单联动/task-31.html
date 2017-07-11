@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>task-31</title>
+	<style type="text/css">
+		body{
+			font-size: 25px;
+			font-family: 'Microsoft yahei'
+		}
+		input{
+			border: 2px solid #a8a8a8;
+			font-size: 25px;
+			border-radius: 5px;
+			outline: none;
+		}
+		.radio{
+			display: inline-block;
+			margin-left: 100px;
+		}
+		#form-container{
+			width: 700px;
+			margin: auto;
+			padding: 100px;
+		}
+		#form-container span{
+			width: auto;
+			height: 50px;
+			padding: 0 20px;
+			margin-left: 25px;
+			float: left;
+		}
+		#select-container{
+			padding: 20px 0;
+		}
+		.hide{
+			display: none;
+		}
+		.select{
+			margin-left: 30px;
+			width: 160px;
+			height: 34px;
+			padding: 6px 12px;
+			font-size: 14px;
+			line-height: 1.428;
+			color: #555;
+			background-color: #fff;
+			background-image: none;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+			box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+		}
+	</style>
+</head>
+<body>
+	<div id="form-container">
+		<div id="radio-select" onchange="radioChange()">
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="inSchoolRadio" checked>在校生</input>
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="outschoolRadio">非在校生</input>
+				</label>
+			</div>
+		</div>
+		<div id="select-container">
+			<div class="inSchool">
+				<span>学校</span>
+				<select class="select" id="select1" onchange="selectDistrict()">
+					<option value="bj">北京</option>
+					<option value="sh">上海</option>
+					<option value="hz">杭州</option>
+				</select>
+				<select class="select" id="select2">
+					<option value="pku">北京大學</option>
+					<option value="thu">清華大學</option>
+					<option value="bhu">北京航空航天大學</option>
+				</select>
+			</div>
+			<div class="outSchool hide">
+				<span>就業單位</span>
+				<input type="text" class="input"></input>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function radioChange(){
+			if (document.getElementById("inSchoolRadio").checked) {
+				document.querySelector(".inSchool").className = "inSchool";
+				document.querySelector(".outSchool").className = "outSchool hide";
+			} else {
+				document.querySelector(".inSchool").className = "inSchool hide";
+				document.querySelector(".outSchool").className = "outSchool";
+			}
+		}
+		function selectDistrict(){
+			var data = {
+				bj : ["北京大學","清華大學","北京航空航天大學"],
+				sh : ["復旦大學","上海交通大學","同濟大學"],
+				hz : ["浙江大學","杭州電子科技大學","浙江工業大學"]
+			}
+			var source = document.getElementById("select1");
+			var target = document.getElementById("select2");
+			var selected = source.options[source.selectedIndex].value;
+			target.innerHTML = "";
+			for (var i = 0; i < data[selected].length; i++) {
+				var opt = document.createElement('option');
+				opt.value = data[selected][i];
+				opt.innerHTML = data[selected][i];
+				document.getElementById('select2').appendChild(opt);
+			}
+		}
+	</script>
+</body>
+</html>

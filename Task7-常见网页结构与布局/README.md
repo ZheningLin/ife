@@ -12,3 +12,5 @@
   - 在Chrome中完美实现与设计稿的各项字体、布局、内外边距等样式
   - 有能力的同学可以尝试跨浏览器的兼容性
   - 有能力的同学可以在实现一遍后尝试用less, sass或者stylus等再实现一次
+# 实现
+ [预览](https://zheninglin.github.io/ife/Task7-%E5%B8%B8%E8%A7%81%E7%BD%91%E9%A1%B5%E7%BB%93%E6%9E%84%E4%B8%8E%E5%B8%83%E5%B1%80/index.html)

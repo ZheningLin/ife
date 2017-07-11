@@ -12,4 +12,4 @@
   - 有能力的同学可以尝试跨浏览器的兼容性
   - 有能力的同学可以在实现一遍后尝试用less, sass或者stylus等再实现一次
 # 实现
- [预览](https://zheninglin.github.io/Task9-复杂页面的实现/index.html)
+ [预览](https://zheninglin.github.io/ife/Task9-复杂页面的实现/index.html)
